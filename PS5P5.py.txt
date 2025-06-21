@@ -1,0 +1,18 @@
+PS4P5.py
+
+lastname = input("Enter  your last name: ")
+dependents = int(input("number of  the dependents: "))
+gross_income = float(input("Enter gross income: "))
+adjusted_income = gross_income - (dependents * 12000)
+if adjusted_income > 50000:
+    tax_rate = 0.20
+else:
+    tax_rate = 0.10
+income_tax = adjusted_income * tax_rate
+if income_tax < 0:
+    income_tax = 100
+print("Last Name:", lastname)
+print("Gross Income:", gross_income)
+print("Dependents:", dependents)
+print("Adjusted Gross Income:", adjusted_income)
+print("Income Tax:", income_tax)

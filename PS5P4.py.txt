@@ -1,0 +1,13 @@
+PS4P4.py
+
+name = input("Enter appliancce name: ")
+cost = float(input("Enter appliance cost: "))
+if cost > 1000:
+    warranty = cost * 0.10
+else:
+    warranty = cost * 0.05
+total = cost + warranty
+print("Appliance Name:", name)
+print("Appliance Cost:", cost)
+print("Warronty Cost:", warronty)
+print("Total:", total)
